@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import{firebaseAuth} from '../utils/firebase.config'
 import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer.jsx'
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -73,6 +74,7 @@ const Signup = () => {
           <button onClick={handleSignIn}>Sign Up</button>
         </div>
       </div>
+      <Footer/>
     </Container>
   );
 };
