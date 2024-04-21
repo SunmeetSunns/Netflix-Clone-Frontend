@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { firebaseAuth } from '../utils/firebase.config'
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Footer from '../components/Footer.jsx'
 
 const Login = () => {
     const [formValues, setFormValues] = useState({
@@ -69,6 +70,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </Container>
     );
 };
